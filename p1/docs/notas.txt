@@ -1,0 +1,17 @@
+2.
+
+a) Obtenha o conteúdo do ficheiro /etc/passwd do servidor.
+
+
+b) Crie um arquivo dentro da pasta /tmp do servidor. Demonstre que o arquivo foi criado
+entrando no contentor para ver se o arquivo existe, ou use outro ataque Shellshock para
+listar o arquivo criado.
+
+c) É possível obter o conteúdo do ficheiro /etc/shadow do servidor? 
+- Não porque é preciso permissoes root para mexer/ver nessa pasta que esta encriptada
+
+d) Os pedidos HTTP GET podem enviar dados no URL após a marca ‘?’, numa zona
+designada query string. Demonstre que a query string aparece também numa variável
+de ambiente. Podemos usar este método para lançar o ataque Shellshock?
+- Não, porque a string é tratada de outra maneira, poe "%20" no lugar de espaços. Portanto 
+o comando n corre.
